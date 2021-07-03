@@ -1,13 +1,13 @@
-﻿using DataModels;
+﻿using Data;
+using DataModels;
 using System;
 using System.IO;
+using System.Linq;
 
 namespace Search
 {
     class Program
     {
-        const string DataFile = "./cameras-defb.csv";
-
         static void Main(string[] args)
         {
             if (args.Length < 2)
@@ -17,36 +17,12 @@ namespace Search
                 return;
             }
 
-            string columnName = args[0].Replace("--", "");
+            string columnName = args[0].Replace("--", ""); // not used, retained for future expansion
             string searchValue = args[1];
 
-            var stream = new StreamReader("./Data/cameras-defb.csv");
-            stream.ReadLine(); // skip header line
-
-            while (stream.EndOfStream == false )
-            {
-                string line = stream.ReadLine();
-                MatchLine(line, columnName, searchValue);
-            }
-            
+            Importer.FindMatches(columnName, searchValue).ForEach(x => DisplayCamera(x));
         }
 
-        static void MatchLine(string line, string columnName, string searchValue)
-        {
-            var fields = line.Split(';');
-            if (fields.Length != 3)
-            {
-                return;
-            }
-
-            var camera = Camera.FromLine(fields);
-
-            if (camera.Name.Contains(searchValue, StringComparison.InvariantCultureIgnoreCase))
-            {
-                DisplayCamera(camera);
-            }
-
-        }
 
         static void DisplayCamera(Camera camera)
         {

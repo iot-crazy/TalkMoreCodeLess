@@ -19,8 +19,18 @@ namespace DataModels
             Lng = lng;
         }
 
-        public static Camera FromLine(string[] fields)
+        public static Camera FromLine(string line)
         {
+            return Camera.FromFields(line.Split(';'));
+        }
+
+        public static Camera FromFields(string[] fields)
+        {
+            if (fields.Length != 3)
+            {
+                return null;
+            }
+
             return new Camera(
                 int.Parse(regx.Match(fields[0]).Value),
                 fields[0],

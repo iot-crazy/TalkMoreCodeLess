@@ -6,17 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Data\cameras-defb.csv" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Data\cameras-defb.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\DataModels\DataModels.csproj" />
+    <ProjectReference Include="..\Data\Data.csproj" />
   </ItemGroup>
 
 </Project>

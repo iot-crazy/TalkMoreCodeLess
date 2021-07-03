@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Search", "Search\Search.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModels", "DataModels\DataModels.csproj", "{740DD50F-CAC0-46A4-B5EC-0173AE7DF366}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{1EB3768E-29F5-40CB-89BD-450A087DD776}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{C2F7C81E-C4E8-4CDA-98B7-EB1EAFF0BE14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{740DD50F-CAC0-46A4-B5EC-0173AE7DF366}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{740DD50F-CAC0-46A4-B5EC-0173AE7DF366}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{740DD50F-CAC0-46A4-B5EC-0173AE7DF366}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EB3768E-29F5-40CB-89BD-450A087DD776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EB3768E-29F5-40CB-89BD-450A087DD776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EB3768E-29F5-40CB-89BD-450A087DD776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EB3768E-29F5-40CB-89BD-450A087DD776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2F7C81E-C4E8-4CDA-98B7-EB1EAFF0BE14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2F7C81E-C4E8-4CDA-98B7-EB1EAFF0BE14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2F7C81E-C4E8-4CDA-98B7-EB1EAFF0BE14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2F7C81E-C4E8-4CDA-98B7-EB1EAFF0BE14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
