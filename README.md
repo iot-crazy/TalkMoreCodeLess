@@ -5,7 +5,7 @@ As this exercise was time boxed, the focus on was achieving functionality whilst
 
 This is NOT production ready code and I would not recommend writing code in this way for a live product.
 
-Please note that I am a back end developer and usualy only turn my hand to altering existing frotn end code. For this reason, I was unable to attempt the front end task as learning an appropriate framework would have taken a large amoutn of time. Instead, I plan to demonstrate a Web Assembly created using a technology that I have been recently studying using the [Uno Platform](https://platform.uno/), creating the front end with [UWP XAML](https://docs.microsoft.com/en-us/windows/uwp/xaml-platform/).
+Please note that I am a back end developer and usualy only turn my hand to altering existing front end code. For this reason, I was unable to attempt the front end task as learning an appropriate framework would have taken a large amount of time. Instead, I plan to demonstrate a Web Assembly created using a technology that I have been recently studying using the [Uno Platform](https://platform.uno/), creating the front end with [UWP XAML](https://docs.microsoft.com/en-us/windows/uwp/xaml-platform/).  This example code can be found here [Cameras Uno](https://github.com/iot-crazy/CamerasUno).
 
 Certain common techniques are not present in this example code and for this reason I invite the reader to visit my other repositories, in particular the following:
 
